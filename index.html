@@ -19,19 +19,21 @@
 
   <header class="header">
     <h1 class="visually-hidden">Todo App</h1>
-    <img class="header-image"
+    <img class="header__image"
          src="./eisenhower-matrix.jpg"
          alt="The Eisenhower matrix">
-    <a class="more-inf"
+    <a class="header__more-inf"
        href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
 
   <main class="wrapper">
 
-    <section id="add-task">
+    <section class="add-task"
+             id="add-task">
+      <h2 class="visually-hidden">Add Item</h2>
       <label class="label title"
              for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
+      <div class="add-task__wrapper">
         <input id="new-task"
                class="task-input"
                type="text">
@@ -40,11 +42,11 @@
     </section>
 
 
-    <section>
+    <section class="todo">
       <h3 class="title">Todo</h3>
-      <ul class="list"
+      <ul class="todo__list list"
           id="incomplete-tasks">
-        <li class="list-item">
+        <li class="todo__item list-item">
           <input class="checkbox"
                  type="checkbox">
           <label class="label task">Pay Bills</label>
@@ -55,7 +57,7 @@
                  src="./remove.svg"
                  alt="Button 'Remove'"></button>
         </li>
-        <li class="list-item edit-mode">
+        <li class="todo__item list-item edit-mode">
           <input class="checkbox"
                  type="checkbox">
           <label class="label task">Go Shopping</label>
@@ -70,11 +72,11 @@
       </ul>
     </section>
 
-    <section>
+    <section class="completed">
       <h3 class="title">Completed</h3>
-      <ul class="list"
+      <ul class="completed__list list"
           id="completed-tasks">
-        <li class="list-item">
+        <li class="completed__item list-item">
           <input checked
                  class="checkbox"
                  type="checkbox"><label class="label">See the Doctor</label>
