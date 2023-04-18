@@ -1,5 +1,5 @@
 /* Basic Style */
-.page__body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -27,13 +27,13 @@
 
 }
 
-.centered-main-page-element {
+.wrapper {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 
-.task {
+.task-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -131,6 +131,7 @@ li > input[type="checkbox"] {
 }
 
 li > label {
+  margin-right: auto;
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
